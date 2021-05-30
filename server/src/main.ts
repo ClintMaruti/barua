@@ -129,3 +129,8 @@ app.delete("/contacts/:id",
         }
     }
 );
+
+// Start app listening.
+app.listen(80, () => {
+    console.log("MailBag server open for requests");
+  });

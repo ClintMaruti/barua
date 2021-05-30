@@ -186,7 +186,7 @@ export class Worker {
 
     await client.close();
 
-    return parsed.text;
+    return parsed.text!;
 
   } /* End getMessageBody(). */
 

@@ -37,7 +37,7 @@ export class Worker {
    */
   public addContact(inContact: IContact): Promise<IContact> {
     return new Promise((inResolve, inReject) => {
-      this.db.insert(inContact, (inError: Error, inNewDoc: IContact) => {
+      this.db.insert(inContact, (inError: Error | null, inNewDoc: IContact) => {
         if (inError) {
           inReject(inError);
         } else {
@@ -52,11 +52,11 @@ export class Worker {
       this.db.remove(
         { _id: inID },
         {},
-        (inError: Error, inNumRemoved: Number) => {
+        (inError: Error | null, inNumRemoved: Number) => {
           if (inError) {
             inReject(inError);
           } else {
-            inResolve();
+            inResolve('Deleted');
           }
         }
       );
