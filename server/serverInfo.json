@@ -1,10 +1,10 @@
 {
     "smtp" : {
-        "host" : "barua.mydomain.com", "port" : 999,
-        "auth" : { "user" : "user@domain.com", "pass" : "xxx"}
+        "host" : "smtp.gmail.com", "port" : 465,
+        "auth" : { "user" : "clintmaruti@gmail.com", "pass" : "eastood0009"}
         },
     "imap" : {
-        "host" : "barua.mydomain.com", "port" : 999,
-        "auth" : { "user" : "user@domain.com" , "pass" : "xxx"}
+        "host" : "imap.gmail.com", "port" : 993,
+        "auth" : { "user" : "clintmaruti@gmail.com" , "pass" : "eastood0009"}
     } 
 }
